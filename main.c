@@ -67,7 +67,7 @@ int main(int argc, char **argv)
 
 //  lv_demo_widgets();
 //  base_obj();
-  label();
+  widget();
 
   while (1) {
     /* Periodically call the lv_task handler.
