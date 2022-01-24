@@ -19,6 +19,7 @@
 #include "lv_examples/lv_examples.h"
 #include "lv_widgets/base_obj.h"
 #include "lv_widgets/widget.h"
+#include "lv_widgets/layout.h"
 /*********************
  *      DEFINES
  *********************/
@@ -67,7 +68,8 @@ int main(int argc, char **argv)
 
 //  lv_demo_widgets();
 //  base_obj();
-  widget();
+//  widget();
+  	layout();
 
   while (1) {
     /* Periodically call the lv_task handler.

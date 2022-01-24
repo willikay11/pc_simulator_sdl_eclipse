@@ -59,6 +59,12 @@ void on_drop_down_changed(lv_obj_t * drop_down, lv_event_t event) {
 	}
 }
 
+void btn_event_handler(lv_obj_t * btn, lv_event_t event) {
+	if(event == LV_EVENT_CLICKED) {
+		lv_label_set_text(label_status, "button was clicked");
+	}
+}
+
 void form(void)
 {
 	label_status = lv_label_create(lv_scr_act(), NULL);
@@ -76,6 +82,11 @@ void form(void)
 	lv_obj_t * drop_down = lv_dropdown_create(container, NULL);
 	lv_dropdown_set_options(drop_down, "Kenya\nTz\nUg");
 	lv_obj_set_event_cb(drop_down, on_drop_down_changed);
+
+	lv_obj_t * btn = lv_btn_create(container, NULL);
+	lv_obj_t * btn_label = lv_label_create(btn, NULL);
+	lv_label_set_text(btn_label, "Submit");
+	lv_obj_set_event_cb(btn, btn_event_handler);
 
 }
 
