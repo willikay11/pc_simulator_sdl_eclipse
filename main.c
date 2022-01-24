@@ -20,6 +20,7 @@
 #include "lv_widgets/base_obj.h"
 #include "lv_widgets/widget.h"
 #include "lv_widgets/layout.h"
+#include "lv_widgets/container.h"
 /*********************
  *      DEFINES
  *********************/
@@ -69,7 +70,8 @@ int main(int argc, char **argv)
 //  lv_demo_widgets();
 //  base_obj();
 //  widget();
-  	layout();
+//  layout();
+  container();
 
   while (1) {
     /* Periodically call the lv_task handler.
