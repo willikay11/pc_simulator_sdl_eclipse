@@ -21,6 +21,7 @@
 #include "lv_widgets/widget.h"
 #include "lv_widgets/layout.h"
 #include "lv_widgets/container.h"
+#include "lv_widgets/grouped_widgets.h"
 /*********************
  *      DEFINES
  *********************/
@@ -71,7 +72,8 @@ int main(int argc, char **argv)
 //  base_obj();
 //  widget();
 //  layout();
-  container();
+//  container();
+  groups();
 
   while (1) {
     /* Periodically call the lv_task handler.
