@@ -11,10 +11,12 @@
 #include "display_widgets.h"
 
 void draw_chart(void);
+void draw_gauge(void);
 
 void display_widgets(void)
 {
-	draw_chart();
+//	draw_chart();
+	draw_gauge();
 }
 
 void draw_chart(void)
@@ -51,6 +53,23 @@ void draw_chart(void)
 	lv_chart_set_next(chart, series2, 78);
 	lv_chart_set_next(chart, series2, 10);
 	lv_chart_set_next(chart, series2, 40);
+}
 
+void draw_gauge()
+{
+	lv_obj_t * gauge = lv_gauge_create(lv_scr_act(), NULL);
+	lv_gauge_set_range(gauge, 0, 200);
+	lv_gauge_set_critical_value(gauge, 160);
+
+	static lv_color_t needle_colors[3];
+	needle_colors[0] = LV_COLOR_BLUE;
+	needle_colors[1] = LV_COLOR_GREEN;
+	needle_colors[2] = LV_COLOR_PURPLE;
+
+	lv_gauge_set_needle_count(gauge, 3, needle_colors);
+
+	lv_gauge_set_value(gauge, 1, 20);
+	lv_gauge_set_value(gauge, 2, 40);
+	lv_gauge_set_value(gauge, 3, 60);
 }
 
