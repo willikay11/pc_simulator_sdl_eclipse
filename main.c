@@ -78,7 +78,8 @@ int main(int argc, char **argv)
 //  groups();
 //  display_widgets();
 //  styles_basic();
-  styles_parts();
+//  styles_parts();
+  styles_local();
 
   while (1) {
     /* Periodically call the lv_task handler.
