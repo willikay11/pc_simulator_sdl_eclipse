@@ -23,6 +23,7 @@
 #include "lv_widgets/container.h"
 #include "lv_widgets/grouped_widgets.h"
 #include "lv_widgets/display_widgets.h"
+#include "lv_styles/lv_styles.h"
 /*********************
  *      DEFINES
  *********************/
@@ -75,7 +76,8 @@ int main(int argc, char **argv)
 //  layout();
 //  container();
 //  groups();
-  display_widgets();
+//  display_widgets();
+  styles_basic();
 
   while (1) {
     /* Periodically call the lv_task handler.
