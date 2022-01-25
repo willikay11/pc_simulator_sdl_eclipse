@@ -24,6 +24,8 @@
 #include "lv_widgets/grouped_widgets.h"
 #include "lv_widgets/display_widgets.h"
 #include "lv_styles/lv_styles.h"
+#include "lv_img_and_font/img_and_font.h"
+
 /*********************
  *      DEFINES
  *********************/
@@ -80,7 +82,8 @@ int main(int argc, char **argv)
 //  styles_basic();
 //  styles_parts();
 //  styles_local();
-  styles_advanced();
+//  styles_advanced();
+  fonts();
 
   while (1) {
     /* Periodically call the lv_task handler.
