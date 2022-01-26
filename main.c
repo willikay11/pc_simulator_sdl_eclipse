@@ -86,7 +86,8 @@ int main(int argc, char **argv)
 //  fonts();
 //  custom_fonts();
 //  font_symbols();
-  image();
+//  image();
+  draw_canvas();
 
   while (1) {
     /* Periodically call the lv_task handler.
